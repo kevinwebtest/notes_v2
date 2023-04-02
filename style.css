@@ -44,7 +44,7 @@ button:focus {
 
 .new-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #474747;
     border: none;
     color: white;
     border-radius: 3px;
@@ -52,9 +52,13 @@ button:focus {
     width: 30px;
 }
 
+.new-note:hover {
+    background-color: #1d1d1d;
+}
+
 .first-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #474747;
     border: none;
     color: white;
     border-radius: 3px;
@@ -95,14 +99,14 @@ button:focus {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.2rem;
-    color: #4A4E74;
+    color: #474747;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .selected-note {
-    background-color: #4A4E74;
+    background-color: #474747;
 }
 
 .selected-note .text-snippet {
