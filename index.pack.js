@@ -1022,20 +1022,8 @@ function App() {
         });
     }
 
-    /**
-     * Challenge: complete and implement the deleteNote function
-     * 
-     * Hints: 
-     * 1. What array method can be used to return a new
-     *    array that has filtered out an item based 
-     *    on a condition?
-     * 2. Notice the parameters being based to the function
-     *    and think about how both of those parameters
-     *    can be passed in during the onClick event handler
-     */
-
     function deleteNote(event, noteId) {
-        event.stopPropagation();
+        event.stopPropagation(); // Prevents the note from being selected
         setNotes(function (oldNotes) {
             return oldNotes.filter(function (note) {
                 return note.id !== noteId;
@@ -1258,7 +1246,7 @@ function Sidebar(props) {
             _react2.default.createElement(
                 "h3",
                 null,
-                "Notes"
+                "Notes App v2"
             ),
             _react2.default.createElement(
                 "button",
